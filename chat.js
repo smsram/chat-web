@@ -103,15 +103,3 @@ function scrollToBottom() {
 
 // Call this function after appending a new message
 scrollToBottom();
-
-// Call this function every time a new message is added
-function addMessage(messageContent) {
-    const chatBox = document.querySelector('.chat-box');
-    const messageElement = document.createElement('div');
-    messageElement.className = 'message';
-    messageElement.innerHTML = `<span class="message-text">${messageContent}</span>`;
-    chatBox.appendChild(messageElement);
-
-    // Scroll to the bottom after adding the message
-    scrollToBottom();
-}
