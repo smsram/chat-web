@@ -224,11 +224,14 @@ header div a button:hover{
     width: 100%;
     height: 2rem;
 }
-.message-text{
+.message-text {
     flex: 1;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    word-wrap: break-word; /* Breaks long words */
+    overflow-wrap: break-word; /* Wraps long words to the next line */
+    white-space: pre-wrap; /* Maintains spaces and wraps long text */
 }
 .delete-btn{
     color: red; 
