@@ -209,9 +209,12 @@ header div a button:hover{
 .chat-box{
     border: 1px solid var(--main-clr);
     height: 300px; overflow-y: auto; 
-    padding: 10px; margin-bottom: 10px;
-    text-align: left; 
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+gap: 0.4rem; 
     border-radius: 6px;
+
 }
 .message{
     margin: 5px 0; 
