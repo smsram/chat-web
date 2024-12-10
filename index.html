@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatting SMS</title>
+        <link rel="icon" href="https://i.postimg.cc/D8rz8mGD/6188294648397676890-99.jpg">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <section class="login-section">
+            <div class="login-container">
+                <div class="login-container1">
+                    <div>
+                        <h2 id="form_header">Login</h2>
+                    </div>
+                        <div id="form_content_inner_container">
+                            <input type="text" id="full_name" placeholder="Full name">
+                            <input type="email" id="email" placeholder="Email">
+                            <input type="password" id="password" placeholder="Password">
+                            <input type="number" id="mobile_number" placeholder="Mobile Number">
+                            <input type="text" id="gender_male_female" placeholder="Gender">
+                            <div id="button_container">
+                                <button onclick="login()">Login</button>
+                                <button onclick="register()">Register</button>
+                            </div>
+                        </div>
+                        <div><a href="signup.html">No account? Sign Up!</a></div>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <header>
+                    <h1>Chatting <span>SMS</span></h1>
+                    <div>
+                        <p class="loggedUserProfile"></p>
+                        <a href="index.html"><button>Logout</button></a>
+                    </div>
+                </header>
+                <div class="chat-container1">
+                    <h1>Chat Room</h1>
+                    <div class="chat-box" id="chat-box"></div>
+                    <!--<input type="text" id="username" placeholder="Enter your name" required>-->
+                    <input type="text" id="message" placeholder="Enter your message" required>
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by <a href="https://smsram.github.io/portfolio/">Meher</a> | All Right Reserved.</p>
+            </div>
+        </footer>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+    <script type="module" src="chat.js"></script>
+
+</html>
