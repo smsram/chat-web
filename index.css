@@ -212,9 +212,9 @@ header div a button:hover{
     padding: 10px;
     margin-bottom: 10px;
     text-align: left;
-gap: 0.4rem; 
+    gap: 0.4rem; 
     border-radius: 6px;
-
+    scroll-behavior: smooth;
 }
 .message{
     margin: 5px 0; 
