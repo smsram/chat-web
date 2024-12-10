@@ -94,10 +94,15 @@ onChildRemoved(messagesRef, (snapshot) => {
 });
 
 // Fixing message appearing
+const chatBox = document.querySelector('.chat-box');
+
+// Function to scroll to the bottom of the chat box
 function scrollToBottom() {
-    const chatBox = document.querySelector('.chat-box');
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+// Call this function after appending a new message
+scrollToBottom();
 
 // Call this function every time a new message is added
 function addMessage(messageContent) {
